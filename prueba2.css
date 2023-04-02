@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: rgb(113, 83, 194);
+}
+#start {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#startClicked {
+  display: none;
+}
+#starttitle {
+  font-family: "Barlow Condensed", sans-serif;
+  color: rgba(250, 219, 47, 0.918);
+  text-shadow: 0px 2px 5px rgba(255, 201, 25, 0.918);
+  font-size: 4.5rem;
+}
+#startsub {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #f2f2f2;
+  font-size: 2rem;
+}
+header {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 11vw;
+}
+
+h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: rgba(250, 219, 47, 0.918);
+  text-shadow: 0px 2px 5px rgba(255, 201, 25, 0.918);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#hidden1 {
+  display: none;
+}
+#hidden2 {
+  display: none;
+}
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 50vh;
+  /* background-color: rebeccapurple; */
+}
+.card {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: #f2f2f2;
+  text-align: center;
+}
+.card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.918);
+}
+#solLuna {
+  font-size: 2rem;
+}
+
+/* main div .blocked {
+  background-color: #f2f2f2;
+  color: #f2f2f2;
+} */
+.blocked {
+  /* background-color: #f2f2f2;
+  color: #f2f2f2; */
+  display: none;
+}
+[nightA] {
+  background-color: black;
+}
+[nightB] {
+  background-color: #666;
+  color: rgba(255, 201, 25, 0.918);
+}
+#textPrice1[nightC] {
+  color: rgba(255, 201, 25, 0.918);
+  background-color: #666;
+}
+#textPrice2[nightC] {
+  color: rgba(255, 201, 25, 0.918);
+  background-color: #666;
+}
+#textPrice3[nightC] {
+  color: rgba(255, 201, 25, 0.918);
+  background-color: #666;
+}
+.card {
+  -webkit-animation: flip-in-hor-bottom 0.9s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: flip-in-hor-bottom 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes flip-in-hor-bottom {
+  0% {
+    -webkit-transform: rotateX(80deg);
+    transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+@keyframes flip-in-hor-bottom {
+  0% {
+    -webkit-transform: rotateX(80deg);
+    transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
+.card1 {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.card2 {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.card3 {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#footer {
+  text-align: center;
+  color: #f2f2f2;
+  text-shadow: 2px, 2px black;
+}
